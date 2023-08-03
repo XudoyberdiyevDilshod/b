@@ -1,0 +1,13 @@
+type Query {
+	restaurants: [Restaurant!]!
+}
+
+type Restaurant {
+	restaurant_id: ID!
+	name: String!
+	foods: [Food!]!
+}
+
+type Mutation {
+	addRestaurant(name: String!): String!
+}

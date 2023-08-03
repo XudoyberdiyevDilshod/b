@@ -1,0 +1,13 @@
+type User {
+	id: Int!
+	email: String!
+	password: String!
+}
+
+type Query {
+	user(id: Int!): User
+}
+
+type Mutation {
+	login(email: String!, password: String!): User
+}
